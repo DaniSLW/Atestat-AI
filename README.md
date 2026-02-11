@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/status-Archived-success?style=for-the-badge" />
 </p>
 
-<p align="center">📅 Realizat în 📌 2024</p>
+<p align="center">📅 Realizat în 2024</p>
 
 ---
 
