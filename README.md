@@ -47,8 +47,9 @@ Acest proiect web a fost realizat cu:
 
 - 🧱 **HTML5** – Structura paginii web  
 - 🎨 **CSS3** – Stilizarea paginii și aspect vizual
+- ⚡ **JavaScript (ES6)** – Funcționalitate dinamică și interactivitate
 
-👉 Nu sunt utilizate șabloane externe, iar design-ul este realizat manual.
+👉 Nu sunt utilizate șabloane externe, iar design-ul și logica aplicației sunt realizate integral de autor.
 
 ---
 
