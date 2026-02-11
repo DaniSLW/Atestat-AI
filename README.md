@@ -55,7 +55,7 @@ Acest proiect web a fost realizat cu:
 
 ## 📄 Drepturi de autor și utilizare
 
-Copyright (c) 2024 Datcu Daniel-Alexandru  
+Copyright (c) 2024-2026 Datcu Daniel-Alexandru  
 Toate drepturile rezervate.
 
 Conținutul acestui repository, inclusiv codul sursă, designul și materialele
