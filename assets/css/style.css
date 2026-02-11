@@ -1,0 +1,391 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+
+    /*height: 100vh;*/
+    height: 100%;
+    overflow-x: hidden;
+    
+    display: grid;
+    grid-template: 
+        "nav        nav         nav     " auto
+        "header     header      header  " 250px
+        "article    article     article " auto /
+        auto        auto        auto;
+}
+header {
+    grid-area: header;
+    padding: 30px;
+
+    background-color: black;
+    color: #fefefe;
+    font-family:'Courier New', Courier, monospace;
+
+    background-image: url('../../img/header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+article {
+    grid-area: article;
+
+    background-color: white;
+    color: black;
+}
+nav {
+    grid-area: nav;
+
+    border-bottom: 3px solid white;
+    color: #fefefe;
+    font-family:'Courier New', Courier, monospace;
+}
+.footer {
+    padding: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #101635;
+    color: #fefefe;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* START SCROLLBAR CSS */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 1);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+/* END SCROLLBAR CSS */
+
+/* START NAV CSS */
+nav {
+    padding: 20px;
+    background-color: #101635;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+nav .container .left-content {
+    width: 75%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav .container .left-content .btn {
+    margin-right: 15px;
+}
+nav .container .right-content {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}
+nav .container .right-content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+nav .container .btn {
+    padding: 10px 50px;
+    background: white;
+
+    border-radius: 7.5px;
+    border: 2px solid transparent;
+
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav .container .btn:hover {
+    color: white;
+    background: #101635;
+    border: 2px solid white;
+	transition: ease-in all .2s;
+}
+nav .container .btn.active {
+    color: white;
+    background: #101635;
+    border: 2px solid white;
+}
+/* END NAV CSS */
+
+/* START HEADER CSS */
+header  {
+    overflow: hidden;
+    padding: 20px;
+}
+header p.motto {
+    margin-left: 50px;
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 48px;
+	position: relative;
+	animation: animateText 5s steps(1200) infinite;
+	overflow: hidden;
+	white-space: nowrap;
+}
+@keyframes animateText {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* END HEADER CSS */
+
+/* START ARTICLE CSS */
+article .main {
+    padding: 50px;
+}
+article .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+article .main h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 50px;
+}
+article .main .card {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin: 20px;
+    padding: 30px;
+}
+article .content {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 299px;
+    text-align: justify;
+}
+article .content.active {
+    height: auto;
+}
+article .content h2 {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+article .more {
+    display: block;
+    padding: 20px 50px;
+    background-color: #101635;
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+article .more:hover {
+	color: #101635;
+    background: white;
+    border: 2px solid #101635;
+	transition: ease-in all .2s;
+}
+article .more::before {
+    content: 'Read more';
+}
+article .more.active { 
+    background: white;
+    color: black;
+    border: 2px solid #101635;
+} 
+article .more:hover.active {
+    background-color: #101635;
+    color: white;
+}
+article .more.active::before {
+    content: 'Read less';
+}
+article .image img {
+    width: 550px;
+    height: 375px;
+    border-radius: 20px;
+}
+article .image img:hover  {
+	transform: scale(1.1);
+	transition: ease-in all .2s;
+}
+article .main:nth-child(even) {
+    background-color: #101635;
+    color: white;
+    border-bottom: 3px solid white;
+}
+article .main:nth-child(even) .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+article .main:nth-child(even) .more {
+    background: white;
+    color: #101635;
+    border: 2px solid white;
+}
+article .main:nth-child(even) .more:hover {
+    background: #101635;
+    color: white;
+    border: 2px solid white;
+    transition: ease-in all .2s;
+}
+article .main:nth-child(even) .more.active {
+    background: #101635;
+    color: white;
+    border: 2px solid white;
+}
+article .main:nth-child(even) .more:hover.active {
+    background: white;
+    color: #101635;
+    border: 2px solid white;
+}
+article .card-design {
+    display: flex;
+    background-color: #101635;
+    color: white;
+    width: 800px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+article .card-design:hover {
+    background-color: #151f4d;
+    border: 3px solid #ebebeb;
+    transform: scale(1.05);
+    transition: ease-in all .2s;
+}
+article .card-design .card-image img {
+    margin: 0;
+    padding: 0;
+    height: 294px;
+    width: 350px;
+    border-radius: 18px;
+}
+article .card-design .card-content {
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 295px;
+    text-align: left;
+}
+article .card-content div {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+article .card-design .card-button {
+    display: block;
+    padding: 20px 50px;
+    background-color: white;
+    margin: auto;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #101635;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+article .card-design .card-button:hover {
+    color: white;
+    background: #101635;
+    border: 2px solid white;
+	transition: ease-in all .2s;
+}
+/* END ARTICLE CSS */
+
+/* START FOOTER CSS */ 
+footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+}
+footer .content p {
+    margin-bottom: 1.3rem;
+}
+footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+}
+/* END FOOTER CSS */ 
+
+/* START OF ANIMATIONS */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    transition-delay: 100ms;
+}
+
+.hidden:nth-child(even) {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+    transition-delay: 100ms;
+}
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.show:nth-child(even) {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.left-content > .btn, .right-content {
+    animation: fade-in 1s;
+}
+@keyframes fade-in {
+    from { transform: translateY(-200%); }
+    to { tranform: translateY(0); }
+}
+/* END OF ANIMATIONS */
