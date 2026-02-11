@@ -52,10 +52,12 @@ Acest proiect web a fost realizat cu:
 
 ---
 
-## 📄 Drepturi de autor
+## 📄 Drepturi de autor și utilizare
 
-© 2024 Datcu Daniel-Alexandru. Toate drepturile rezervate.
+Copyright (c) 2024 Datcu Daniel-Alexandru  
+Toate drepturile rezervate.
 
-Acest proiect și codul sursă aferent sunt protejate prin drepturi de autor.
-Copierea, modificarea, distribuirea, reproducerea sau utilizarea acestui proiect,
-integral sau parțial, fără acordul scris al autorului este strict interzisă.
+Conținutul acestui repository, inclusiv codul sursă, designul și materialele
+prezentate, nu pot fi copiate, modificate, distribuite sau utilizate în
+niciun scop fără acordul prealabil, explicit și în scris al autorului.
+
