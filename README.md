@@ -3,6 +3,7 @@
   <img src="https://img.shields.io/badge/license-All%20Rights%20Reserved-red?style=for-the-badge" />
   <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript&logoColor=black" /> 
   <img src="https://img.shields.io/badge/status-Archived-success?style=for-the-badge" />
 </p>
 
